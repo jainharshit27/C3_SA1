@@ -22,6 +22,8 @@ while True:
                     dino_y_change = -1
     
     dino_rect.y += dino_y_change
+    if dino_rect.y < 100:
+        dino_rect.y = 100
    
     cactus_rect.x = cactus_rect.x - 1
     if cactus_rect.x <= -30:
