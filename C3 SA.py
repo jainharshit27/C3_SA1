@@ -20,10 +20,15 @@ while True:
         if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
                     dino_y_change = -1
+        # TA1: Create a condition to recognize KEYUP
+            # TA1: Create a condition to recognize SPACE key
+                # TA1: Change dino_y_change to 1
     
     dino_rect.y += dino_y_change
     if dino_rect.y < 100:
         dino_rect.y = 100
+    # TA2: Check if dino_rect.y is more than 250
+        # TA2: Set dino_rect.y back to 250
    
     cactus_rect.x = cactus_rect.x - 1
     if cactus_rect.x <= -30:
